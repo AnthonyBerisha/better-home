@@ -4,13 +4,14 @@
   "description": "A better new tab/homepage for chrome based browsers",
   "manifest_version": 3,
   "permissions": [
-    "storage"
+    "storage",
+    "bookmarks"
   ],
   "optional_host_permissions": [
     "*://*/*"
   ],
   "chrome_url_overrides": {
-    "newtab": "options/index.html"
+    "newtab": "app/index.html"
   },
   "icons": {
     "16": "assets/logo-16.png",
@@ -22,9 +23,6 @@
   },
   "action": {
     "default_popup": "popup/index.html"
-  },
-  "options_ui": {
-    "page": "options/index.html"
   },
   "content_scripts": [
     {
